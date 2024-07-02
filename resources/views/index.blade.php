@@ -69,8 +69,6 @@ initial-scale=1.0">
                                 <h4 class="mb-3">Landscaping</h4>
                                 <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed
                                     diam stet diam sed stet.</p>
-                                <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read
-                                    More</a>
                             </div>
                         </div>
                     </div>
@@ -86,8 +84,6 @@ initial-scale=1.0">
                                 <h4 class="mb-3">Pruning plants</h4>
                                 <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed
                                     diam stet diam sed stet.</p>
-                                <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read
-                                    More</a>
                             </div>
                         </div>
                     </div>
@@ -103,8 +99,36 @@ initial-scale=1.0">
                                 <h4 class="mb-3">Irrigation & Drainage</h4>
                                 <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed
                                     diam stet diam sed stet.</p>
-                                <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read
-                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item rounded d-flex h-100">
+                            <div class="service-img rounded">
+                                <img class="img-fluid" src="img/service-3.jpg" alt="">
+                            </div>
+                            <div class="service-text rounded p-5">
+                                <div class="btn-square rounded-circle mx-auto mb-3">
+                                    <img class="img-fluid" src="img/icon/icon-5.png" alt="Icon">
+                                </div>
+                                <h4 class="mb-3">Irrigation & Drainage</h4>
+                                <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed
+                                    diam stet diam sed stet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item rounded d-flex h-100">
+                            <div class="service-img rounded">
+                                <img class="img-fluid" src="img/service-3.jpg" alt="">
+                            </div>
+                            <div class="service-text rounded p-5">
+                                <div class="btn-square rounded-circle mx-auto mb-3">
+                                    <img class="img-fluid" src="img/icon/icon-5.png" alt="Icon">
+                                </div>
+                                <h4 class="mb-3">Irrigation & Drainage</h4>
+                                <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed
+                                    diam stet diam sed stet.</p>
                             </div>
                         </div>
                     </div>
@@ -120,8 +144,6 @@ initial-scale=1.0">
                                 <h4 class="mb-3">Garden Maintenance </h4>
                                 <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed
                                     diam stet diam sed stet.</p>
-                                <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read
-                                    More</a>
                             </div>
                         </div>
                     </div>
@@ -132,7 +154,7 @@ initial-scale=1.0">
         <!-- Service End -->
     </section>
 
-    <div class="container-lg text-center">
+    {{-- <div class="container-lg text-center">
         <div class="row">
             <div class="col-md-4">
                 <h2>Recent Activities</h2>
@@ -143,12 +165,12 @@ initial-scale=1.0">
                     aspernatur fugiat nisi eligendi?</a>
             </div>
         </div>
-    </div>
+    </div> --}}
 
 
 
     {{-- late --}}
-    <section class="pt-5 pb-5">
+    {{-- <section class="pt-5 pb-5">
         <div class="container">
             <div class="row">
 
@@ -266,7 +288,7 @@ initial-scale=1.0">
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <section id="about-us">
         <div class="container">
