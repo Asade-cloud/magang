@@ -17,7 +17,7 @@
                         <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-lg-2" href="{{route('produk')}}">Produk</a>
+                        <a class="nav-link mx-lg-2" href="{{route('Produk')}}">Produk</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mx-lg-2" href="#">Link</a>
