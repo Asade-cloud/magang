@@ -13,30 +13,42 @@ initial-scale=1.0">
 
 <body>
     @include('layouts.header')
-   
-    
+
+
 
     <!-- Shop Start -->
     <div class="container-fluid" style="padding-top:50px">
         <div class="row px-xl-5">
             <!-- Shop Sidebar Start -->
             <div class="col-lg-3 col-md-4">
-                
+
                 <!-- Color Start -->
-                <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Filter by color</span></h5>
+                <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Filter
+                        by color</span></h5>
                 <div class="bg-light p-4 mb-30">
                     <form>
-                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                            <input type="checkbox" class="custom-control-input" checked id="color-all">
-                            <label class="custom-control-label" for="price-all">All Color</label>
-                            <span class="badge border font-weight-normal">1000</span>
+                        <div class="box" style="text-align-last: justify">
+                            @foreach ($kategoris as $kategori)
+                                <div class="dropdown">
+                                    <label class="custom-control-label"
+                                        for="price-all">{{ $kategori->nama_kategori }}</label>
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        @foreach ($kategori->subkategoris as $subkategori)
+                                        <li><a class="dropdown-item" href="#">{{$subkategori->nama_subkategori}}</a></li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            @endforeach
                         </div>
-                    
+
                     </form>
                 </div>
                 <!-- Color End -->
 
-               
+
             </div>
             <!-- Shop Sidebar End -->
 
@@ -44,44 +56,49 @@ initial-scale=1.0">
             <!-- Shop Product Start -->
             <div class="col-lg-9 col-md-8">
                 <div class="row pb-3">
-                   
+
                     @foreach ($produks as $produk)
-                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
-                            <div class="product-img position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTjW1FiZ5r3SnmT_y2Gj8TO767e4btcoUPzzVYBZ_WdDsrwiWeII8n4CVAb3JXW5KJjz0&usqp=CAU" alt="">
-                                <div class="product-action">
-                                   <a href="{{ route('Produk.detail', $produk->id) }}">Pencet</a>
+                        <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+                            <div class="product-item bg-light mb-4">
+                                <div class="product-img position-relative overflow-hidden">
+                                    <img class="img-fluid w-100"
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTjW1FiZ5r3SnmT_y2Gj8TO767e4btcoUPzzVYBZ_WdDsrwiWeII8n4CVAb3JXW5KJjz0&usqp=CAU"
+                                        alt="">
+                                    <div class="product-action">
+                                        <a href="{{ route('Produk.detail', $produk->id) }}">Pencet</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate" href="">{{$produk->nama_produk}}</a>
-                                <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>$123.00</h5><h6 class="text-muted ml-2"><del>$123.00</del></h6>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa fa-star text-primary mr-1"></small>
-                                    <small class="fa fa-star text-primary mr-1"></small>
-                                    <small class="fa fa-star text-primary mr-1"></small>
-                                    <small class="fa fa-star text-primary mr-1"></small>
-                                    <small class="fa fa-star text-primary mr-1"></small>
-                                    <small>(99)</small>
+                                <div class="text-center py-4">
+                                    <a class="h6 text-decoration-none text-truncate"
+                                        href="">{{ $produk->nama_produk }}</a>
+                                    <div class="d-flex align-items-center justify-content-center mt-2">
+                                        <h5>$123.00</h5>
+                                        <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center mb-1">
+                                        <small class="fa fa-star text-primary mr-1"></small>
+                                        <small class="fa fa-star text-primary mr-1"></small>
+                                        <small class="fa fa-star text-primary mr-1"></small>
+                                        <small class="fa fa-star text-primary mr-1"></small>
+                                        <small class="fa fa-star text-primary mr-1"></small>
+                                        <small>(99)</small>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     @endforeach
 
-                    
+
                     <div class="col-12">
                         <nav>
-                          <ul class="pagination justify-content-center">
-                            <li class="page-item disabled"><a class="page-link" href="#">Previous</span></a></li>
-                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                          </ul>
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item disabled"><a class="page-link" href="#">Previous</span></a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
                         </nav>
                     </div>
                 </div>
