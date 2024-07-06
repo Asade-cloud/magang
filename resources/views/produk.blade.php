@@ -30,14 +30,18 @@ initial-scale=1.0">
                         <div class="box" style="text-align-last: justify">
                             @foreach ($kategoris as $kategori)
                                 <div class="dropdown">
-                                    <label class="custom-control-label"
-                                        for="price-all">{{ $kategori->nama_kategori }}</label>
+                                    <a href="{{ route('Produk', ['kategoris_id' => $kategori->id]) }}" class="custom-control-a {{ request('kategori_id') == $kategori->id ? 'active' : '' }}"
+                                        for="price-all">{{ $kategori->nama_kategori }}</a>
+
+                                    @if(request('kategori_id') == $kategori->id)   
+                                    @endif
                                     <button class="btn btn-secondary dropdown-toggle" type="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                    </button>
+                                    data-bs-toggle="dropdown" aria-expanded="false"
+                                    ></button>
+                                    
                                     <ul class="dropdown-menu">
                                         @foreach ($kategori->subkategoris as $subkategori)
-                                        <li><a class="dropdown-item" href="#">{{$subkategori->nama_subkategori}}</a></li>
+                                        <li><a href="{{ route('Produk', ['kategoris_id' => $kategori->id, 'subkategori_id' => $subkategori->id]) }}" class="dropdown-item" >{{$subkategori->nama_subkategori}}</a></li>
                                         @endforeach
                                     </ul>
                                 </div>
@@ -57,7 +61,7 @@ initial-scale=1.0">
             <div class="col-lg-9 col-md-8">
                 <div class="row pb-3">
 
-                    @foreach ($produks as $produk)
+                    @forelse ($produks as $produk)
                         <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
                             <div class="product-item bg-light mb-4">
                                 <div class="product-img position-relative overflow-hidden">
@@ -86,7 +90,10 @@ initial-scale=1.0">
                                 </div>
                             </div>
                         </div>
-                    @endforeach
+                        @empty
+                        <p>No products found.</p>
+                    @endforelse
+                    
 
 
                     <div class="col-12">

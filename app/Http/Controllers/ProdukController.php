@@ -10,10 +10,27 @@ use Illuminate\Http\Request;
 
 class ProdukController extends Controller
 {
-    function index()
+    function index(Request $request)
     {
         $kategoris = Kategori::with('subkategoris')->get();
-        $produks = Produk::all();
+        // $produks = Produk::all();
+
+        $query = Produk::query();
+
+        if ($request->has('kategori_id')) {
+            $query->whereHas('subkategori.kategori', function ($q) use ($request) {
+                $q->where('id', $request->kategori_id);
+            });
+        }
+
+        if ($request->has('subkategori_id')) {
+            $query->where('subkategori_id', $request->subkategori_id);
+        }
+
+        $produks = $query->get();
+
+
+
         return view('Produk',
         ['produks' => $produks,
         'kategoris' => $kategoris
