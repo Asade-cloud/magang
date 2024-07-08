@@ -1,6 +1,9 @@
 <nav class="navbar navbar-expand-lg sticky-top">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Offcanvas navbar</a>
+    <div class="container-fluid" style="background-color:bisque">
+        <a class="navbar-brand" href="#">
+            
+            <img  height="50" src="https://www.mitravisualgroup.co.id/sitepad-data/uploads/2023/12/MVG-Logo-03.png"></img>
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

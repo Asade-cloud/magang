@@ -27,27 +27,29 @@ initial-scale=1.0">
                         by color</span></h5>
                 <div class="bg-light p-4 mb-30">
                     <form>
-                        <div class="box" style="text-align-last: justify">
-                            @foreach ($kategoris as $kategori)
-                                <div class="dropdown">
-                                    <a href="{{ route('Produk', ['kategoris_id' => $kategori->id]) }}" class="custom-control-a {{ request('kategori_id') == $kategori->id ? 'active' : '' }}"
-                                        for="price-all">{{ $kategori->nama_kategori }}</a>
 
-                                    @if(request('kategori_id') == $kategori->id)   
-                                    @endif
-                                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false"
-                                    ></button>
-                                    
-                                    <ul class="dropdown-menu">
+
+
+                        @foreach ($kategoris as $kategori)
+                            <li class="dropdown-item" style="text-align-last: justify">
+                                <a href="{{ route('Produk', ['kategoris_id' => $kategori->id]) }}"
+                                    class="custom-control-a ">{{ $kategori->nama_kategori }}</a>
+                                    @if ($kategori->subkategoris->isNotEmpty())
+                                <a class="dropdown-collapsed" data-bs-target="#forms-dropdown" data-bs-toggle="collapse"
+                                    href="">
+                                    <i class="bi bi-chevron-down ms-auto"></i>
+                                </a>
+
+                                    <ul id="forms-dropdown" class="dropdown-content collapse "
+                                        data-bs-parent="#sidebar-nav">
                                         @foreach ($kategori->subkategoris as $subkategori)
-                                        <li><a href="{{ route('Produk', ['kategoris_id' => $kategori->id, 'subkategori_id' => $subkategori->id]) }}" class="dropdown-item" >{{$subkategori->nama_subkategori}}</a></li>
+                                            <li><a href="{{ route('Produk', ['kategoris_id' => $kategori->id, 'subkategori_id' => $subkategori->id]) }}"
+                                                    class="dropdown-item">{{ $subkategori->nama_subkategori }}</a></li>
                                         @endforeach
                                     </ul>
-                                </div>
-                            @endforeach
-                        </div>
-
+                                @endif
+                            </li>
+                        @endforeach
                     </form>
                 </div>
                 <!-- Color End -->
@@ -68,9 +70,7 @@ initial-scale=1.0">
                                     <img class="img-fluid w-100"
                                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTjW1FiZ5r3SnmT_y2Gj8TO767e4btcoUPzzVYBZ_WdDsrwiWeII8n4CVAb3JXW5KJjz0&usqp=CAU"
                                         alt="">
-                                    <div class="product-action">
-                                        <a href="{{ route('Produk.detail', $produk->id) }}">Pencet</a>
-                                    </div>
+                                   
                                 </div>
                                 <div class="text-center py-4">
                                     <a class="h6 text-decoration-none text-truncate"
@@ -79,21 +79,14 @@ initial-scale=1.0">
                                         <h5>$123.00</h5>
                                         <h6 class="text-muted ml-2"><del>$123.00</del></h6>
                                     </div>
-                                    <div class="d-flex align-items-center justify-content-center mb-1">
-                                        <small class="fa fa-star text-primary mr-1"></small>
-                                        <small class="fa fa-star text-primary mr-1"></small>
-                                        <small class="fa fa-star text-primary mr-1"></small>
-                                        <small class="fa fa-star text-primary mr-1"></small>
-                                        <small class="fa fa-star text-primary mr-1"></small>
-                                        <small>(99)</small>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
-                        @empty
+                    @empty
                         <p>No products found.</p>
                     @endforelse
-                    
+
 
 
                     <div class="col-12">
