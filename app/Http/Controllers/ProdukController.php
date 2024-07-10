@@ -13,13 +13,13 @@ class ProdukController extends Controller
     function index(Request $request)
     {
         $kategoris = Kategori::with('subkategoris')->get();
-        // $produks = Produk::all();
 
         $query = Produk::query();
 
         if ($request->has('kategori_id')) {
-            $query->whereHas('subkategori.kategori', function ($q) use ($request) {
-                $q->where('id', $request->kategori_id);
+            $kategoriId = $request->kategori_id;
+            $query->whereHas('subkategori.kategori', function ($q) use ($kategoriId) {
+                $q->where('id', $kategoriId);
             });
         }
 

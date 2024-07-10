@@ -32,7 +32,7 @@ initial-scale=1.0">
 
                         @foreach ($kategoris as $kategori)
                             <li class="dropdown-item" style="text-align-last: justify">
-                                <a href="{{ route('Produk', ['kategoris_id' => $kategori->id]) }}"
+                                <a href="{{ route('Produk', ['kategori_id' => $kategori->id]) }}"
                                     class="custom-control-a ">{{ $kategori->nama_kategori }}</a>
                                     @if ($kategori->subkategoris->isNotEmpty())
                                 <a class="dropdown-collapsed" data-bs-target="#forms-dropdown" data-bs-toggle="collapse"

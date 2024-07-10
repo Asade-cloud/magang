@@ -9,7 +9,7 @@ class Subkategori extends Model
 {
     use HasFactory;
 
-    public function kategoris()
+    public function kategori()
     {
         return $this->belongsTo(Kategori::class);
     }

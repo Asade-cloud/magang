@@ -9,7 +9,7 @@ class Produk extends Model
 {
     use HasFactory;
 
-    public function subkategoris()
+    public function subkategori()
     {
         return $this->belongsTo(Subkategori::class);
     }

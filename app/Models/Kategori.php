@@ -10,6 +10,6 @@ class Kategori extends Model
     use HasFactory;
     public function subkategoris()
     {
-        return $this->hasMany(Subkategori::class);
+        return $this->hasMany(Subkategori::class,);
     }
 }
