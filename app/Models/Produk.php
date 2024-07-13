@@ -13,5 +13,8 @@ class Produk extends Model
     {
         return $this->belongsTo(Subkategori::class);
     }
-
+    public function merek()
+    {
+        return $this->belongsTo(Merek::class);
+    }
 }

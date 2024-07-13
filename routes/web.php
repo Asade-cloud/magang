@@ -13,4 +13,6 @@ Route::get('/', function () {
 // Route::resource('produk', ProdukController::class)->name('produk');
 Route::get('/Produk', [ProdukController::class, 'index'])->name('Produk');
 Route::get('/Produk/{id}', [ProdukController::class, 'Produk_detail'])->name('Produk.detail');
+Route::get('/Produk/Create', [ProdukController::class, 'create'])->name('Produk.create');
+Route::post('/Produk', [ProdukController::class, 'store'])->name('produk.store');
 

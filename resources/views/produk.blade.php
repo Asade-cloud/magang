@@ -65,7 +65,7 @@ initial-scale=1.0">
                             <div class="product-item bg-light mb-4">
                                 <div class="product-img position-relative overflow-hidden">
                                     <img class="img-fluid w-100"
-                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTjW1FiZ5r3SnmT_y2Gj8TO767e4btcoUPzzVYBZ_WdDsrwiWeII8n4CVAb3JXW5KJjz0&usqp=CAU"
+                                        src="{{  asset('storage/' . $produk->img) }}"
                                         alt="">
                                    
                                 </div>
