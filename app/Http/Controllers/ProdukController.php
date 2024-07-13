@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Produk;
 use App\Models\Kategori;
 use App\Models\Merek;
+use App\Models\Subkategori;
 
 use Illuminate\Http\Request;
 
@@ -39,8 +40,16 @@ class ProdukController extends Controller
 
     function Produk_detail($id)
     {
-        $produks = Produk::find($id);
-        return view('Produk_detail',['produks' => $produks]);
+        $produks = Produk::findOrFail($id);
+        $kategoris = Kategori::find($produks->kategori_id);
+        $subkategoris = Subkategori::find($produks->subkategori_id);
+
+        return view('Produk_detail',[
+            'produks' => $produks,
+            'kategoris' => $kategoris,
+            'subkategoris' => $subkategoris
+
+    ]);
     }
 
     public function create()

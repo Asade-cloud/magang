@@ -28,14 +28,14 @@ initial-scale=1.0">
                 <div class="bg-light p-4 mb-30">
                     <form>
                         @foreach ($kategoris as $kategori)
-                            <li class="dropdown-item" >
+                            <li class="dropdown-item">
                                 <a href="{{ route('Produk', ['kategori_id' => $kategori->id]) }}"
-                                    class="custom-control-a"   >{{ $kategori->nama_kategori }}</a>
-                                    @if ($kategori->subkategoris->isNotEmpty())
-                                <a class="dropdown-collapsed" data-bs-target="#forms-dropdown" data-bs-toggle="collapse"
-                                    style="float: right">
-                                    <i class="bi bi-chevron-down ms-auto"></i>
-                                </a>
+                                    class="custom-control-a">{{ $kategori->nama_kategori }}</a>
+                                @if ($kategori->subkategoris->isNotEmpty())
+                                    <a class="dropdown-collapsed" data-bs-target="#forms-dropdown"
+                                        data-bs-toggle="collapse" style="float: right">
+                                        <i class="bi bi-chevron-down ms-auto"></i>
+                                    </a>
 
                                     <ul id="forms-dropdown" class="dropdown-content collapse "
                                         data-bs-parent="#sidebar-nav">
@@ -63,11 +63,10 @@ initial-scale=1.0">
                     @forelse ($produks as $produk)
                         <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
                             <div class="product-item bg-light mb-4">
-                                <div class="product-img position-relative overflow-hidden">
-                                    <img class="img-fluid w-100"
-                                        src="{{  asset('storage/' . $produk->img) }}"
-                                        alt="">
-                                   
+                                <div class="product-img position-relative overflow-hidden ">
+                                    <img class="img-fluid w-100 h-100" src="{{ asset('storage/' . $produk->img) }}"
+                                    alt="{{ $produk->nama_produk }}">
+
                                 </div>
                                 <div class="text-center py-4">
                                     <a class="h6 text-decoration-none text-truncate"
@@ -88,10 +87,10 @@ initial-scale=1.0">
 
                     <div class="col-12">
                         <nav>
-                            
+
                             <ul class="pagination justify-content-center">
                                 {{ $produks->links() }}
-                                
+
 
                             </ul>
                         </nav>

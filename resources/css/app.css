@@ -201,3 +201,10 @@
   width: 100%;
   height: 100%;
 }
+
+.col-detail{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+
+}
