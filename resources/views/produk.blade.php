@@ -27,16 +27,13 @@ initial-scale=1.0">
                         by color</span></h5>
                 <div class="bg-light p-4 mb-30">
                     <form>
-
-
-
                         @foreach ($kategoris as $kategori)
-                            <li class="dropdown-item" style="text-align-last: justify">
+                            <li class="dropdown-item" >
                                 <a href="{{ route('Produk', ['kategori_id' => $kategori->id]) }}"
-                                    class="custom-control-a ">{{ $kategori->nama_kategori }}</a>
+                                    class="custom-control-a"   >{{ $kategori->nama_kategori }}</a>
                                     @if ($kategori->subkategoris->isNotEmpty())
                                 <a class="dropdown-collapsed" data-bs-target="#forms-dropdown" data-bs-toggle="collapse"
-                                    href="">
+                                    style="float: right">
                                     <i class="bi bi-chevron-down ms-auto"></i>
                                 </a>
 
@@ -52,6 +49,7 @@ initial-scale=1.0">
                         @endforeach
                     </form>
                 </div>
+
                 <!-- Color End -->
 
 
@@ -62,7 +60,6 @@ initial-scale=1.0">
             <!-- Shop Product Start -->
             <div class="col-lg-9 col-md-8">
                 <div class="row pb-3">
-
                     @forelse ($produks as $produk)
                         <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
                             <div class="product-item bg-light mb-4">
@@ -91,13 +88,11 @@ initial-scale=1.0">
 
                     <div class="col-12">
                         <nav>
+                            
                             <ul class="pagination justify-content-center">
-                                <li class="page-item disabled"><a class="page-link" href="#">Previous</span></a>
-                                </li>
-                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                {{ $produks->links() }}
+                                
+
                             </ul>
                         </nav>
                     </div>

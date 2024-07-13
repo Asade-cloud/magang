@@ -12,7 +12,9 @@ class ProdukController extends Controller
 {
     function index(Request $request)
     {
-        $kategoris = Kategori::with('subkategoris')->get();
+        $kategoris = Kategori::with(['subkategoris' => function($query) {
+            $query->orderBy('nama_subkategori', 'asc'); // Mengurutkan subkategori berdasarkan abjad
+        }])->orderBy('nama_kategori', 'asc')->get(); // Mengurutkan kategori berdasarkan abjad
 
         $query = Produk::query();
 
@@ -29,6 +31,7 @@ class ProdukController extends Controller
 
         $produks = $query->get();
 
+        $produks = $query->paginate(1);
 
 
         return view('Produk',
