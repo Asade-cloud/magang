@@ -64,8 +64,8 @@ initial-scale=1.0">
                         <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
                             <div class="product-item bg-light mb-4">
                                 <div class="product-img position-relative overflow-hidden ">
-                                    <img class="img-fluid w-100 h-100" src="{{ asset('storage/' . $produk->img) }}"
-                                    alt="{{ $produk->nama_produk }}">
+                                    <img class="img-fluid " src="{{ asset('storage/' . $produk->img) }}"
+                                    alt="{{ $produk->nama_produk }}" style="height: 300px" width="100%">
 
                                 </div>
                                 <div class="text-center py-4">

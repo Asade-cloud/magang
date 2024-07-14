@@ -43,14 +43,20 @@ class ProdukController extends Controller
         $produks = Produk::findOrFail($id);
         $kategoris = Kategori::find($produks->kategori_id);
         $subkategoris = Subkategori::find($produks->subkategori_id);
+        $relatedProducts = $produks->relatedProducts(6);
+
 
         return view('Produk_detail',[
             'produks' => $produks,
             'kategoris' => $kategoris,
-            'subkategoris' => $subkategoris
+            'subkategoris' => $subkategoris,
+            'relatedProducts' => $relatedProducts
 
     ]);
     }
+
+
+
 
     public function create()
     {

@@ -45,127 +45,97 @@ initial-scale=1.0">
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    {{-- ser --}}
-    <section id="serv">
-        <!-- Service Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                    <p class="fs-5 fw-bold text-primary">Our Services</p>
-                    <h1 class="display-5 mb-5">Services That We Offer For You</h1>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item rounded d-flex h-100">
-                            <div class="service-img rounded">
-                                <img class="img-fluid"
-                                    src="https://www.mitravisualgroup.co.id/sitepad-data/uploads/2023/12/KATALOG-MAGNUSTEK.png"
-                                    alt="">
-                            </div>
-                            <div class="service-text rounded p-5">
-                                <div class="btn-square rounded-circle mx-auto mb-3">
-                                    <img class="img-fluid" src="img/icon/icon-3.png" alt="Icon">
-                                </div>
-                                <h4 class="mb-3">Landscaping</h4>
-                                <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed
-                                    diam stet diam sed stet.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item rounded d-flex h-100">
-                            <div class="service-img rounded">
-                                <img class="img-fluid" src="img/service-2.jpg" alt="">
-                            </div>
-                            <div class="service-text rounded p-5">
-                                <div class="btn-square rounded-circle mx-auto mb-3">
-                                    <img class="img-fluid" src="img/icon/icon-6.png" alt="Icon">
-                                </div>
-                                <h4 class="mb-3">Pruning plants</h4>
-                                <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed
-                                    diam stet diam sed stet.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item rounded d-flex h-100">
-                            <div class="service-img rounded">
-                                <img class="img-fluid" src="img/service-3.jpg" alt="">
-                            </div>
-                            <div class="service-text rounded p-5">
-                                <div class="btn-square rounded-circle mx-auto mb-3">
-                                    <img class="img-fluid" src="img/icon/icon-5.png" alt="Icon">
-                                </div>
-                                <h4 class="mb-3">Irrigation & Drainage</h4>
-                                <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed
-                                    diam stet diam sed stet.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item rounded d-flex h-100">
-                            <div class="service-img rounded">
-                                <img class="img-fluid" src="img/service-3.jpg" alt="">
-                            </div>
-                            <div class="service-text rounded p-5">
-                                <div class="btn-square rounded-circle mx-auto mb-3">
-                                    <img class="img-fluid" src="img/icon/icon-5.png" alt="Icon">
-                                </div>
-                                <h4 class="mb-3">Irrigation & Drainage</h4>
-                                <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed
-                                    diam stet diam sed stet.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item rounded d-flex h-100">
-                            <div class="service-img rounded">
-                                <img class="img-fluid" src="img/service-3.jpg" alt="">
-                            </div>
-                            <div class="service-text rounded p-5">
-                                <div class="btn-square rounded-circle mx-auto mb-3">
-                                    <img class="img-fluid" src="img/icon/icon-5.png" alt="Icon">
-                                </div>
-                                <h4 class="mb-3">Irrigation & Drainage</h4>
-                                <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed
-                                    diam stet diam sed stet.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item rounded d-flex h-100">
-                            <div class="service-img rounded">
-                                <img class="img-fluid" src="img/service-4.jpg" alt="">
-                            </div>
-                            <div class="service-text rounded p-5">
-                                <div class="btn-square rounded-circle mx-auto mb-3">
-                                    <img class="img-fluid" src="img/icon/icon-4.png" alt="Icon">
-                                </div>
-                                <h4 class="mb-3">Garden Maintenance </h4>
-                                <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed
-                                    diam stet diam sed stet.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-        <!-- Service End -->
-    </section>
 
-    {{-- <div class="container-lg text-center">
-        <div class="row">
-            <div class="col-md-4">
-                <h2>Recent Activities</h2>
+    
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="text-primary">Our Services</h6>
+                <h1 class="mb-4">We Are Pioneers In The World Of Renewable Energy</h1>
             </div>
-            <div class="col-md-6">
-                <a>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel unde, modi velit laboriosam pariatur
-                    commodi laudantium error eos blanditiis officia veritatis reiciendis aperiam ut deleniti aut
-                    aspernatur fugiat nisi eligendi?</a>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid" src="https://www.suarasurabaya.net/wp-content/uploads/2014/08/kk139795_clip10.jpg" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="bi bi-person-video2" style="font-size: xx-large"></i>
+                            </div>
+                            <h4 class="mb-3">Solar Panels</h4>
+                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/img-600x400-2.jpg" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa fa-wind fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">Wind Turbines</h4>
+                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                            <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/img-600x400-3.jpg" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa fa-lightbulb fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">Hydropower Plants</h4>
+                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                            <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/img-600x400-4.jpg" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa fa-solar-panel fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">Solar Panels</h4>
+                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                            <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/img-600x400-5.jpg" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa fa-wind fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">Wind Turbines</h4>
+                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                            <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/img-600x400-6.jpg" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa fa-lightbulb fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">Hydropower Plants</h4>
+                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                            <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div> --}}
+    </div>
+    <!-- Service End -->
 
 
 
