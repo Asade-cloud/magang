@@ -46,7 +46,7 @@ initial-scale=1.0">
         </button>
     </div>
 
-    
+
     <!-- Service Start -->
     <div class="container-xxl py-5">
         <div class="container">
@@ -57,7 +57,9 @@ initial-scale=1.0">
             <div class="row g-4">
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item rounded overflow-hidden">
-                        <img class="img-fluid" src="https://www.suarasurabaya.net/wp-content/uploads/2014/08/kk139795_clip10.jpg" alt="">
+                        <img class="img-fluid"
+                            src="https://www.suarasurabaya.net/wp-content/uploads/2014/08/kk139795_clip10.jpg"
+                            alt="">
                         <div class="position-relative p-4 pt-0">
                             <div class="service-icon">
                                 <i class="bi bi-person-video2" style="font-size: xx-large"></i>
@@ -76,7 +78,8 @@ initial-scale=1.0">
                             </div>
                             <h4 class="mb-3">Wind Turbines</h4>
                             <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                            <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                            <a class="small fw-medium" href="">Read More<i
+                                    class="fa fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -89,46 +92,8 @@ initial-scale=1.0">
                             </div>
                             <h4 class="mb-3">Hydropower Plants</h4>
                             <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                            <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item rounded overflow-hidden">
-                        <img class="img-fluid" src="img/img-600x400-4.jpg" alt="">
-                        <div class="position-relative p-4 pt-0">
-                            <div class="service-icon">
-                                <i class="fa fa-solar-panel fa-3x"></i>
-                            </div>
-                            <h4 class="mb-3">Solar Panels</h4>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                            <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item rounded overflow-hidden">
-                        <img class="img-fluid" src="img/img-600x400-5.jpg" alt="">
-                        <div class="position-relative p-4 pt-0">
-                            <div class="service-icon">
-                                <i class="fa fa-wind fa-3x"></i>
-                            </div>
-                            <h4 class="mb-3">Wind Turbines</h4>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                            <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item rounded overflow-hidden">
-                        <img class="img-fluid" src="img/img-600x400-6.jpg" alt="">
-                        <div class="position-relative p-4 pt-0">
-                            <div class="service-icon">
-                                <i class="fa fa-lightbulb fa-3x"></i>
-                            </div>
-                            <h4 class="mb-3">Hydropower Plants</h4>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                            <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                            <a class="small fw-medium" href="">Read More<i
+                                    class="fa fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -137,129 +102,42 @@ initial-scale=1.0">
     </div>
     <!-- Service End -->
 
-
-
-    {{-- late --}}
-    {{-- <section class="pt-5 pb-5">
+    {{-- Awward --}}
+    <section id="awward">
         <div class="container">
-            <div class="row">
-
-                <div class="col-12">
-                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row">
-
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280"
-                                                src="https://media.geeksforgeeks.org/wp-content/uploads/20240110011815/sutterlin-1362879_640-(1).jpg">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
-                                                <p class="card-text">With supporting text below
-                                                    as a natural lead-in to
-                                                    additional content.</p>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280"
-                                                src="https://media.geeksforgeeks.org/wp-content/uploads/20240110011815/sutterlin-1362879_640-(1).jpg">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Special title
-                                                    treatment</h4>
-                                                <p class="card-text">With supporting
-                                                    text below as a natural
-                                                    lead-in to additional
-                                                    content.</p>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280"
-                                                src="https://media.geeksforgeeks.org/wp-content/uploads/20240110011815/sutterlin-1362879_640-(1).jpg">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
-                                                <p class="card-text">With supporting text below
-                                                    as a natural lead-in to
-                                                    additional content.</p>
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row">
-
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280"
-                                                src="https://media.geeksforgeeks.org/wp-content/uploads/20240110011815/sutterlin-1362879_640-(1).jpg">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
-                                                <p class="card-text">With supporting text below
-                                                    as a natural lead-in to
-                                                    additional content.</p>
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280"
-                                                src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20240110011815/sutterlin-1362879_640-(1).jpg">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
-                                                <p class="card-text">With supporting text below
-                                                    as a natural lead-in to
-                                                    additional content.</p>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card">
-                                            <img class="img-fluid" alt="100%x280"
-                                                src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20240110011815/sutterlin-1362879_640-(1).jpg">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
-                                                <p class="card-text">With supporting text below
-                                                    as a natural lead-in to
-                                                    additional content.</p>
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
+            <div class="row align-items-center justify-content-between g-5">
+                <div class="col-lg-6">
+                    <div class="detail p-5">
+                        <div class="display-header">
+                            <h2 class="display-2 text-uppercase text-dark pb-2">About Us</h2>
+                            <p class="pb-3">Ac varius lectus tellus tellus quisque tristique aenean. Volutpat velit
+                                nulla eu iaculis risus in urna. Eu morbi vel purus velit dui vel egestas purus sed. Eget
+                                turpis tincidunt faucibus montes arcu in nullam tortor orci. Nulla tellus sed purus
+                                vestibulum sagittis pretium donec nec mattis ollis porta sit ut.</p>
+                            <p>Facilisi ut vulputate volutpat a aliquet. Facilisis sed quis pretium amet hac. Justo
+                                tristique sagittis sodales viverra venenatis integer fringilla. </p>
+                            <a href="about-us.html"
+                                class="btn btn-medium btn-arrow outline-dark position-relative mt-3">
+                                <span class="text-uppercase">About us</span>
+                                <svg class="arrow-right position-absolute" width="18" height="20">
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-6 text-right">
-                    <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button"
-                        data-slide="prev">
-                        <i class="bi bi-arrow-left"></i>
-                    </a>
-                    <a class="btn btn-primary mb-3" href="#carouselExampleIndicators2" role="button"
-                        data-slide="next">
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
+                <div class="col-lg-6">
+                    <div class="image-holder">
+                        <img src="https://www.mitravisualgroup.co.id/sitepad-data/uploads/2023/12/Screenshot-2023-12-24-at-22-53-38-GRAND-LAUNCHING-MITRA-VISUAL-GROUP-Google-Drive.png"
+                            alt="single" class="img-fluid jarallax-img">
+                    </div>
                 </div>
             </div>
         </div>
-    </section> --}}
+    </section>
 
+
+   
     <section id="about-us">
         <div class="container">
             <div class="row align-items-center justify-content-between g-5">

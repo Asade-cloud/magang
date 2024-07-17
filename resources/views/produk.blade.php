@@ -23,8 +23,7 @@ initial-scale=1.0">
             <div class="col-lg-3 col-md-4">
 
                 <!-- Color Start -->
-                <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Filter
-                        by color</span></h5>
+                <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Kategori</span></h5>
                 <div class="bg-light p-4 mb-30">
                     <form>
                         @foreach ($kategoris as $kategori)
@@ -37,10 +36,10 @@ initial-scale=1.0">
                                         <i class="bi bi-chevron-down ms-auto"></i>
                                     </a>
 
-                                    <ul id="forms-dropdown" class="dropdown-content collapse "
+                                    <ul id="forms-dropdown" class="dropdown-content collapse"
                                         data-bs-parent="#sidebar-nav">
                                         @foreach ($kategori->subkategoris as $subkategori)
-                                            <li><a href="{{ route('Produk', ['kategoris_id' => $kategori->id, 'subkategori_id' => $subkategori->id]) }}"
+                                            <li class="dropdowns"><a href="{{ route('Produk', ['kategoris_id' => $kategori->id, 'subkategori_id' => $subkategori->id]) }}"
                                                     class="dropdown-item">{{ $subkategori->nama_subkategori }}</a></li>
                                         @endforeach
                                     </ul>
@@ -65,15 +64,14 @@ initial-scale=1.0">
                             <div class="product-item bg-light mb-4">
                                 <div class="product-img position-relative overflow-hidden ">
                                     <img class="img-fluid " src="{{ asset('storage/' . $produk->img) }}"
-                                    alt="{{ $produk->nama_produk }}" style="height: 300px" width="100%">
+                                        alt="{{ $produk->nama_produk }}" style="height: 250px" width="100%">
 
                                 </div>
                                 <div class="text-center py-4">
                                     <a class="h6 text-decoration-none text-truncate"
-                                        href="">{{ $produk->nama_produk }}</a>
+                                        href="{{ route('Produk_detail', $produk->id) }}">{{ $produk->nama_produk }}</a>
                                     <div class="d-flex align-items-center justify-content-center mt-2">
-                                        <h5>$123.00</h5>
-                                        <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                        <h5>Rp.{{ $produk->harga }}</h5>
                                     </div>
 
                                 </div>
@@ -104,14 +102,14 @@ initial-scale=1.0">
 
 
 
-    {{-- <footer>
+    <footer>
         @include('layouts.footer')
-    </footer> --}}
+    </footer>
 
     @vite('resources/js/app.js')
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    {{-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> --}}
 </body>
 
 </html>
