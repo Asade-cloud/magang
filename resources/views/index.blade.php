@@ -50,34 +50,37 @@ initial-scale=1.0">
     <!-- Service Start -->
     <div class="container-xxl py-5">
         <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <div class="text-center mx-auto mb-5 wow fadeInUp " data-wow-delay="0.1s" style="max-width: 600px;">
                 <h6 class="text-primary">Our Services</h6>
                 <h1 class="mb-4">We Are Pioneers In The World Of Renewable Energy</h1>
             </div>
-            <div class="row g-4">
+            <div class="row g-4 d-flex justify-content-center">
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item rounded overflow-hidden">
-                        <img class="img-fluid"
-                            src="https://www.suarasurabaya.net/wp-content/uploads/2014/08/kk139795_clip10.jpg"
-                            alt="">
+                        <img class="img-fluid w-100" style="height:250px"
+                            src="{{ Vite::asset('resources/images/Service/Service-Videotron.png') }}"
+                            alt="Service-Videotron">
                         <div class="position-relative p-4 pt-0">
                             <div class="service-icon">
-                                <i class="bi bi-person-video2" style="font-size: xx-large"></i>
+                                <i class="bi bi-person-video3" style="font-size: xx-large"></i>
                             </div>
-                            <h4 class="mb-3">Solar Panels</h4>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                            <h4 class="mb-3">LED Videotron
+                            </h4>
+                            <a class="small fw-medium" href="">Read More<i
+                                    class="fa fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item rounded overflow-hidden">
-                        <img class="img-fluid" src="img/img-600x400-2.jpg" alt="">
+                        <img class="img-fluid w-100" style="height:250px"
+                            src="{{ Vite::asset('resources/images/Service/Service-Broadcast.png') }}"
+                            alt="Service-Broadcast">
                         <div class="position-relative p-4 pt-0">
                             <div class="service-icon">
-                                <i class="fa fa-wind fa-3x"></i>
+                                <i class="bi bi-broadcast" style="font-size: xx-large"></i>
                             </div>
-                            <h4 class="mb-3">Wind Turbines</h4>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                            <h4 class="mb-3">Broadcasting</h4>
                             <a class="small fw-medium" href="">Read More<i
                                     class="fa fa-arrow-right ms-2"></i></a>
                         </div>
@@ -85,10 +88,26 @@ initial-scale=1.0">
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item rounded overflow-hidden">
-                        <img class="img-fluid" src="img/img-600x400-3.jpg" alt="">
+                        <img class="img-fluid w-100" style="height:250px"
+                            src="{{ Vite::asset('resources/images/Service/Service-EventE.png') }}" alt="Service-EventE">
                         <div class="position-relative p-4 pt-0">
                             <div class="service-icon">
-                                <i class="fa fa-lightbulb fa-3x"></i>
+                                <i class="bi bi-tools" style="font-size: xx-large"></i>
+                            </div>
+                            <h4 class="mb-3">Event Equipment</h4>
+                            <a class="small fw-medium" href="">Read More<i
+                                    class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s" style="">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid"
+                            src="https://www.suarasurabaya.net/wp-content/uploads/2014/08/kk139795_clip10.jpg"
+                            alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="bi bi-broadcast" style="font-size: xx-large"></i>
                             </div>
                             <h4 class="mb-3">Hydropower Plants</h4>
                             <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
@@ -98,8 +117,12 @@ initial-scale=1.0">
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
+
+
+
     <!-- Service End -->
 
     {{-- Awward --}}
@@ -137,7 +160,7 @@ initial-scale=1.0">
     </section>
 
 
-   
+
     <section id="about-us">
         <div class="container">
             <div class="row align-items-center justify-content-between g-5">

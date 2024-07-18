@@ -1,16 +1,18 @@
 .navbar {
   background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+
 }
 
 .nav-link {
-  color: gray;
+  color: black;
   font-weight: 500;
   position: relative;
 }
 
 .nav-link:hover,
 .nav-link:active {
-  color: black;
+  color: gray;
 }
 
 .nav-link::before {
@@ -21,7 +23,7 @@
   transform: translateX(-50%);
   width: 0;
   height: 2px;
-  background-color: aqua;
+  background-color: #4162A7;
   visibility: hidden;
   transition: 0.3s ease-in-out;
 }
@@ -69,7 +71,7 @@
 }
 
 :root {
-  --primary: #32C36C;
+  --primary: #4162A7;
   --light: #F6F7F8;
   --dark: #1A2A36;
 }
@@ -391,3 +393,4 @@
   font-size: 30px;
   color: white;
 }
+

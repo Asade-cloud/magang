@@ -1,9 +1,8 @@
-<nav class="navbar navbar-expand-lg sticky-top" style="background-color:bisque">
-    <div class="container-fluid" >
+<nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container-fluid">
         <a class="navbar-brand" href="#">
 
-            <img src="https://www.mitravisualgroup.co.id/sitepad-data/uploads/2023/12/MVG-Logo-03.png"
-                style="height: 50px"></img>
+            <img src="{{ Vite::asset('resources/images/Mvg-logo.png') }}" style="height: 50px"></img>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -17,7 +16,7 @@
             <div class="offcanvas-body">
                 <ul class="navbar-nav flex-grow-1 pe-3 justify-content-center">
                     <li class="nav-item">
-                        <a class="nav-link mx-lg-2 active" aria-current="page" href="{{ route('Home') }}">Home</a>
+                        <a class="nav-link mx-lg-2" aria-current="page" href="{{ route('Home') }}">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mx-lg-2" href="{{ route('Produk') }}">Produk</a>
