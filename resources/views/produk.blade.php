@@ -39,7 +39,7 @@ initial-scale=1.0">
                                     <ul id="forms-dropdown" class="dropdown-content collapse"
                                         data-bs-parent="#sidebar-nav">
                                         @foreach ($kategori->subkategoris as $subkategori)
-                                            <li class="dropdowns"><a href="{{ route('Produk', ['kategoris_id' => $kategori->id, 'subkategori_id' => $subkategori->id]) }}"
+                                            <li class="dropdowns"><a href="{{ route('Produk', ['kategori_id' => $kategori->id, 'subkategori_id' => $subkategori->id]) }}"
                                                     class="dropdown-item">{{ $subkategori->nama_subkategori }}</a></li>
                                         @endforeach
                                     </ul>

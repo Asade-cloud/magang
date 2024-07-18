@@ -1,4 +1,7 @@
 <!-- Remove the container if you want to extend the Footer to full width. -->
+
+@include('layouts.wa')
+
 <div class="footer">
     <footer class="text-white text-center text-lg-start bg-black">
         <!-- Grid container -->

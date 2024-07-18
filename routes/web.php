@@ -19,5 +19,8 @@ Route::get('/Produk/{id}', [ProdukController::class, 'Produk_detail'])->name('Pr
 // Route::get('/Produk/Create', [ProdukController::class, 'create'])->name('Produk.Create');
 Route::post('/Produk', [ProdukController::class, 'store'])->name('produk.store');
 Route::get('/Service/broadcast', [ServiceController::class, 'broadcast'])->name('Service.broadcast');
+Route::get('/Service/videotron', [ServiceController::class, 'videotron'])->name('Service.videotron');
+Route::get('/Service/eventequipment', [ServiceController::class, 'eventequipment'])->name('Service.eventequipment');
+
 
 
