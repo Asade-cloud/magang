@@ -9,6 +9,11 @@ class Produk extends Model
 {
     use HasFactory;
 
+    public function gambars()
+    {
+        return $this->hasMany(Gambar::class);
+    }
+
     public function subkategori()
     {
         return $this->belongsTo(Subkategori::class);

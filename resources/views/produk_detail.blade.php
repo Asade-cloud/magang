@@ -29,7 +29,7 @@ initial-scale=1.0">
                                 <img class="w-100 h-100" src="{{ asset('storage/' . $produks->img) }}"
                                     alt="{{ $produks->nama_produk }}">
                             </div>
-                            {{-- <div class="carousel-item">
+                            <div class="carousel-item">
                                 <img class="w-100 h-100"
                                     src="https://proav.co.id/wp-content/uploads/2023/05/Insight-LED-Videotron-Outdoor-P5-IN-5596HO-side-depan.webp"
                                     alt="Image">
@@ -38,7 +38,7 @@ initial-scale=1.0">
                                 <img class="w-100 h-100"
                                     src="https://proav.co.id/wp-content/uploads/2023/05/Insight-LED-Videotron-Outdoor-P5-IN-5596HO-side-depan.webp"
                                     alt="Image">
-                            </div> --}}
+                            </div>
 
                         </div>
                     </div>
