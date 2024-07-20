@@ -39,8 +39,8 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="harga">Harga:</label>
-                <input type="number" class="form-control" id="harga" name="harga" value="{{ old('harga') }}" required>
+                <label for="linkmodul" class="form-label">Link Modul:</label>
+                <input type="url" name="linkmodul" class="form-control" id="linkmodul">
             </div>
             <div class="form-group">
                 <label for="kategori_id">Kategori:</label>
@@ -59,13 +59,11 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="img">Gambar:</label>
-                <input type="file" class="form-control" id="img" name="img" required>
+                <label for="gambar" class="form-label">Gambar:</label>
+                <input type="file" name="gambar[]" class="form-control" id="gambar" multiple>
+             
             </div>
-            <div class="form-group">
-                <label for="subimage">Subimage:</label>
-                <input type="number" class="form-control" id="subimage" name="subimage" value="{{ old('subimage') }}" >
-            </div>
+          
             <div class="form-group">
                 <label for="deskripsi">Deskripsi:</label>
                 <textarea class="form-control" id="deskripsi" name="deskripsi" rows="4" required>{{ old('deskripsi') }}</textarea>

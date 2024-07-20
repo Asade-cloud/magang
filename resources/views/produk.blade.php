@@ -23,7 +23,8 @@ initial-scale=1.0">
             <div class="col-lg-3 col-md-4">
 
                 <!-- Color Start -->
-                <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Kategori</span></h5>
+                <h5 class="section-title position-relative text-uppercase mb-3"><span
+                        class="bg-secondary pr-3">Kategori</span></h5>
                 <div class="bg-light p-4 mb-30">
                     <form>
                         @foreach ($kategoris as $kategori)
@@ -39,7 +40,8 @@ initial-scale=1.0">
                                     <ul id="forms-dropdown" class="dropdown-content collapse"
                                         data-bs-parent="#sidebar-nav">
                                         @foreach ($kategori->subkategoris as $subkategori)
-                                            <li class="dropdowns"><a href="{{ route('Produk', ['kategori_id' => $kategori->id, 'subkategori_id' => $subkategori->id]) }}"
+                                            <li class="dropdowns"><a
+                                                    href="{{ route('Produk', ['kategori_id' => $kategori->id, 'subkategori_id' => $subkategori->id]) }}"
                                                     class="dropdown-item">{{ $subkategori->nama_subkategori }}</a></li>
                                         @endforeach
                                     </ul>
@@ -62,11 +64,12 @@ initial-scale=1.0">
                     @forelse ($produks as $produk)
                         <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
                             <div class="product-item bg-light mb-4">
-                                <div class="product-img position-relative overflow-hidden ">
-                                    <img class="img-fluid " src="{{ asset('storage/' . $produk->img) }}"
-                                        alt="{{ $produk->nama_produk }}" style="height: 250px" width="100%">
-
-                                </div>
+                                @if ($produk->gambar->isNotEmpty())
+                                    <div class="product-img position-relative overflow-hidden ">
+                                        <img class="img-fluid " src="{{ asset('storage/' . $produk->gambar->first()->gambar) }}"
+                                            alt="{{ $produk->nama_produk }}" style="height: 250px" width="100%">
+                                    </div>
+                                @endif
                                 <div class="text-center py-4">
                                     <a class="h6 text-decoration-none text-truncate"
                                         href="{{ route('Produk_detail', $produk->id) }}">{{ $produk->nama_produk }}</a>

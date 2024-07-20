@@ -16,7 +16,7 @@ use App\Http\Controllers\HomeController;
 Route::get('/', [HomeController::class, 'index'])->name('Home');
 Route::get('/Produk', [ProdukController::class, 'index'])->name('Produk');
 Route::get('/Produk/{id}', [ProdukController::class, 'Produk_detail'])->name('Produk_detail');
-// Route::get('/Produk/Create', [ProdukController::class, 'create'])->name('Produk.Create');
+// Route::get('/Produk/Create', [ProdukController::class, 'create'])->name('Produk_Create');
 Route::post('/Produk', [ProdukController::class, 'store'])->name('produk.store');
 Route::get('/Service/broadcast', [ServiceController::class, 'broadcast'])->name('Service.broadcast');
 Route::get('/Service/videotron', [ServiceController::class, 'videotron'])->name('Service.videotron');

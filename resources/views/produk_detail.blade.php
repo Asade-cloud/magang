@@ -25,28 +25,29 @@ initial-scale=1.0">
                 <div class="col-lg-5 mb-30">
                     <div id="product-carousel" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner bg-light">
-                            <div class="carousel-item active">
-                                <img class="w-100 h-100" src="{{ asset('storage/' . $produks->img) }}"
-                                    alt="{{ $produks->nama_produk }}">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="w-100 h-100"
-                                    src="https://proav.co.id/wp-content/uploads/2023/05/Insight-LED-Videotron-Outdoor-P5-IN-5596HO-side-depan.webp"
-                                    alt="Image">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="w-100 h-100"
-                                    src="https://proav.co.id/wp-content/uploads/2023/05/Insight-LED-Videotron-Outdoor-P5-IN-5596HO-side-depan.webp"
-                                    alt="Image">
-                            </div>
-
+                            @foreach ($produks->gambar as $key => $gambar)
+                                <div class="carousel-item @if ($key == 0) active @endif">
+                                    <img class="d-block w-100 h-100" src="{{ asset('storage/' . $gambar->gambar) }}"
+                                        alt="{{ $produks->nama_produk }}">
+                                </div>
+                            @endforeach
                         </div>
+                        @if ($produks->gambar->count() > 1)
+                        <button class="carousel-control-prev" type="button" data-bs-target="#product-carousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#product-carousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    @endif
+            
                     </div>
                 </div>
 
                 <div class="col-lg-7 h-auto mb-30">
                     <h3 style="color: blue">{{ $produks->nama_produk }}</h3>
-                    <h3 class="font-weight-semi-bold mb-4">Rp. {{ $produks->harga }}</h3>
                     <div class="row xl-5" style="margin-top: 20px">
                         <div class="col">
                             <div class="bg-light p-30">
@@ -133,10 +134,14 @@ initial-scale=1.0">
        <!-- <-produk terkait-> -->
 <div class="container mt-5">
     <div class="d-flex justify-content-between align-items-center mb-3">
+        @if ($relatedProducts->count() > 0)
         <h2>Produk Terkait</h2>
         <div>
-            <button class="btn btn-primary" type="button" data-target="#related-product-carousel" data-slide="prev">Sebelumnya</button>
-            <button class="btn btn-primary" type="button" data-target="#related-product-carousel" data-slide="next">Berikutnya</button>
+            <div>
+                <button class="btn btn-primary" type="button" data-bs-target="#related-product-carousel" data-bs-slide="prev">Sebelumnya</button>
+                <button class="btn btn-primary" type="button" data-bs-target="#related-product-carousel" data-bs-slide="next">Berikutnya</button>
+            </div>
+        @endif
         </div>
     </div>
     <div id="related-product-carousel" class="carousel slide" data-ride="carousel">

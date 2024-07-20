@@ -8,8 +8,17 @@ use Illuminate\Database\Eloquent\Model;
 class Produk extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'nama_produk',
+        'linkmodul',
+        'deskripsi',
+        'kategori_id',
+        'subkategori_id',
+        'merek_id'
+    ];
 
-    public function gambars()
+
+    public function gambar()
     {
         return $this->hasMany(Gambar::class);
     }
