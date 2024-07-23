@@ -21,6 +21,8 @@ Route::post('/Produk', [ProdukController::class, 'store'])->name('produk.store')
 Route::get('/Service/broadcast', [ServiceController::class, 'broadcast'])->name('Service.broadcast');
 Route::get('/Service/videotron', [ServiceController::class, 'videotron'])->name('Service.videotron');
 Route::get('/Service/eventequipment', [ServiceController::class, 'eventequipment'])->name('Service.eventequipment');
+Route::get('/Service/digitalsign', [ServiceController::class, 'digitalsign'])->name('Service.digitalsign');
+
 
 
 

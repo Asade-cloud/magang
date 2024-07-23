@@ -15,4 +15,7 @@ class ServiceController extends Controller
     function eventequipment(){
         return view('Service.eventequipment');
     }
+    function digitalsign(){
+        return view('Service.digitalsign');
+    }
 }

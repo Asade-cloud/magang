@@ -66,7 +66,7 @@ initial-scale=1.0">
                             </div>
                             <h4 class="mb-3">LED Videotron
                             </h4>
-                            <a class="small fw-medium" href="">Read More<i
+                            <a class="small fw-medium" href="{{ route('Service.videotron') }}">Read More<i
                                     class="fa fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
@@ -95,7 +95,7 @@ initial-scale=1.0">
                                 <i class="bi bi-tools" style="font-size: xx-large"></i>
                             </div>
                             <h4 class="mb-3">Event Equipment</h4>
-                            <a class="small fw-medium" href="">Read More<i
+                            <a class="small fw-medium" href="{{ route('Service.eventequipment') }}">Read More<i
                                     class="fa fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
@@ -109,9 +109,9 @@ initial-scale=1.0">
                             <div class="service-icon">
                                 <i class="bi bi-broadcast" style="font-size: xx-large"></i>
                             </div>
-                            <h4 class="mb-3">Hydropower Plants</h4>
+                            <h4 class="mb-3">Digital Signate</h4>
                             <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                            <a class="small fw-medium" href="">Read More<i
+                            <a class="small fw-medium" href="{{ route('Service.digitalsign') }}">Read More<i
                                     class="fa fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>

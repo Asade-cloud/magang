@@ -15,10 +15,6 @@ initial-scale=1.0">
 
 <body>
     @include('layouts.header')
-
-
-
-
         <!-- Shop Detail Start -->
         <div class="container-fluid pb-5" style="padding-top: 30px">
             <div class="row px-xl-5">
@@ -189,9 +185,9 @@ initial-scale=1.0">
 <!-- <-end produk terkait-> -->
 
 
-    {{-- <footer>
+    <footer>
         @include('layouts.footer')
-    </footer> --}}
+    </footer>
 
     @vite('resources/js/app.js')
     <script>

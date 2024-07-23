@@ -71,8 +71,8 @@ initial-scale=1.0">
                                     </div>
                                 @endif
                                 <div class="text-center py-4">
-                                    <a class="h6 text-decoration-none text-truncate"
-                                        href="{{ route('Produk_detail', $produk->id) }}">{{ $produk->nama_produk }}</a>
+                                    {{-- <a class="h6 text-decoration-none text-truncate"
+                                        href="{{ route('Produk_detail', $produk->id) }}">{{ $produk->nama_produk }}</a> --}}
                                     <div class="d-flex align-items-center justify-content-center mt-2">
                                         <h5>Rp.{{ $produk->harga }}</h5>
                                     </div>

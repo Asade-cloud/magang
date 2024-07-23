@@ -31,8 +31,8 @@ initial-scale=1.0">
                 </div>
                 <div class="col-lg-6">
                     <div class="image-holder">
-                        <img src="https://www.mitravisualgroup.co.id/sitepad-data/uploads/2023/12/Screenshot-2023-12-24-at-22-53-38-GRAND-LAUNCHING-MITRA-VISUAL-GROUP-Google-Drive.png"
-                            alt="single" class="img-fluid jarallax-img" style="padding:30px">
+                        <img src="{{ Vite::asset('resources/images/Service/Event/EVENTE.png') }}" alt="single"
+                            class="img-fluid jarallax-img" style="padding:30px">
                     </div>
                 </div>
             </div>
@@ -41,8 +41,8 @@ initial-scale=1.0">
             <div class="row align-items-center justify-content-between g-5">
                 <div class="col-lg-6">
                     <div class="image-holder">
-                        <img src="https://www.mitravisualgroup.co.id/sitepad-data/uploads/2023/12/Screenshot-2023-12-24-at-22-53-38-GRAND-LAUNCHING-MITRA-VISUAL-GROUP-Google-Drive.png"
-                            alt="single" class="img-fluid jarallax-img" style="padding:30px">
+                        <img src="{{ Vite::asset('resources/images/Service/Event/FLIGHTCASE.png') }}" alt="single"
+                            class="img-fluid jarallax-img" style="padding:30px">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -82,8 +82,8 @@ initial-scale=1.0">
                 </div>
                 <div class="col-lg-6">
                     <div class="image-holder">
-                        <img src="https://www.mitravisualgroup.co.id/sitepad-data/uploads/2023/12/Screenshot-2023-12-24-at-22-53-38-GRAND-LAUNCHING-MITRA-VISUAL-GROUP-Google-Drive.png"
-                            alt="single" class="img-fluid jarallax-img" style="padding:30px">
+                        <img src="{{ Vite::asset('resources/images/Service/Event/BARRIER.png') }}" alt="single"
+                            class="img-fluid jarallax-img" style="padding:30px">
                     </div>
                 </div>
             </div>
@@ -92,8 +92,8 @@ initial-scale=1.0">
             <div class="row align-items-center justify-content-between g-5">
                 <div class="col-lg-6">
                     <div class="image-holder">
-                        <img src="https://www.mitravisualgroup.co.id/sitepad-data/uploads/2023/12/Screenshot-2023-12-24-at-22-53-38-GRAND-LAUNCHING-MITRA-VISUAL-GROUP-Google-Drive.png"
-                            alt="single" class="img-fluid jarallax-img" style="padding:30px">
+                        <img src="{{ Vite::asset('resources/images/Service/Event/RIGGING.png') }}" alt="single"
+                            class="img-fluid jarallax-img" style="padding:30px">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -132,8 +132,8 @@ initial-scale=1.0">
                 </div>
                 <div class="col-lg-6">
                     <div class="image-holder">
-                        <img src="https://www.mitravisualgroup.co.id/sitepad-data/uploads/2023/12/Screenshot-2023-12-24-at-22-53-38-GRAND-LAUNCHING-MITRA-VISUAL-GROUP-Google-Drive.png"
-                            alt="single" class="img-fluid jarallax-img" style="padding:30px">
+                        <img src="{{ Vite::asset('resources/images/Service/Event/MOKA.png') }}" alt="single"
+                            class="img-fluid jarallax-img" style="padding:30px">
                     </div>
                 </div>
             </div>
@@ -142,15 +142,15 @@ initial-scale=1.0">
             <div class="row align-items-center justify-content-between g-5">
                 <div class="col-lg-6">
                     <div class="image-holder">
-                        <img src="https://www.mitravisualgroup.co.id/sitepad-data/uploads/2023/12/Screenshot-2023-12-24-at-22-53-38-GRAND-LAUNCHING-MITRA-VISUAL-GROUP-Google-Drive.png"
-                            alt="single" class="img-fluid jarallax-img" style="padding:30px">
+                        <img src="{{ Vite::asset('resources/images/Service/Event/RINGLOCK.png') }}" alt="single"
+                            class="img-fluid jarallax-img" style="padding:30px">
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="detail p-5">
                         <div class="display-header">
                             <h2 class="display-5 text-dark pb-2 fw-bold">Ringlock Scaffolding</h2>
-                            <p class="pb-3">Ring lock adalah sistem scaffolding modular yang terdiri dari batang
+                            <p class="pb-3">Ring lock adalah sistem scaffolding modular yang terdiri dari batang
                                 vertikal dengan ring terpasang di interval tertentu. Sistem ini memungkinkan cepat dan
                                 mudah dalam pemasangan dan penyesuaian, serta memberikan struktur yang kuat dan stabil
                                 untuk para pekerja konstruksi. Pada pengerjaannya pun fleksibel dapat mengikuti keamuan
@@ -166,26 +166,17 @@ initial-scale=1.0">
                 <div class="col-lg-6">
                     <div class="detail p-5">
                         <div class="display-header">
-                            <h2 class="display-5 text-dark pb-2 fw-bold">Stadium LED Videotron Perimeter</h2>
-                            <p class="pb-3">Standar Fifa</p>
-                            <ul>
-                                <li>Melindungi pemain dari benturan, karena modul LED menggunakan soft maskin yang
-                                    terbuar dari karet dan terdapat bantal pelindung.</li>
-                                <li>Penyesuaian sudut pandang layar sampai dengan 7 tingkat kemiringan sesuai dengan
-                                    kebutuhan.</li>
-                                <li>Menggunakan bahan Die Cast Alumunium yang presisi sehingga lebih ringan dan mudah
-                                    dibongkar pasang.</li>
-                                <li>Tahan air sampai dengan IP65 demikian juga terhadap debu.</li>
-                                <li>Menggunakan 4200Hz Refresh Rate sehingga tidak terjadi flicker ketika dibawah
-                                    sorotan kamera.</li>
-                            </ul>
-
+                            <h2 class="display-5 text-dark pb-2 fw-bold">Stage Level</h2>
+                            <p class="pb-3">Level Stage atau panggung merupakan kelengkapan dalam suatu acara. Hal ini
+                                untuk memberikan perhatian tambahan saat bintang tamu mulai tampil dan memberikan ruang
+                                ruang khusus untuk pembicara atau pengisi acara lainnya untuk tampil dalam suatu acara
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="image-holder">
-                        <img src="https://www.mitravisualgroup.co.id/sitepad-data/uploads/2023/12/Screenshot-2023-12-24-at-22-53-38-GRAND-LAUNCHING-MITRA-VISUAL-GROUP-Google-Drive.png"
+                        <img src="{{ Vite::asset('resources/images/Service/Event/STAGE.png') }}"
                             alt="single" class="img-fluid jarallax-img" style="padding:30px">
                     </div>
                 </div>
@@ -198,10 +189,10 @@ initial-scale=1.0">
 
 
 
-    {{-- 
+    
     <footer>
         @include('layouts.footer')
-    </footer> --}}
+    </footer>
 
     @vite('resources/js/app.js')
 

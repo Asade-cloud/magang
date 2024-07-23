@@ -9,7 +9,7 @@ class Gambar extends Model
 {
     use HasFactory;
 
-    // protected $fillable = ['produk_id', 'gambar'];
+    protected $fillable = ['produk_id', 'gambar'];
     public function produk()
     {
         return $this->belongsTo(Produk::class);

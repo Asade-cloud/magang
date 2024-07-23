@@ -20,7 +20,7 @@ initial-scale=1.0">
                 <div class="col-lg-6">
                     <div class="detail p-5">
                         <div class="display-header">
-                            <h2 class="display-5 text-dark pb-2 fw-bold">LED Videotron Outdoor / Advertising</h2>
+                            <h2 class="display-5 text-dark pb-2 fw-bold">LED Videotron Indoor</h2>
                             <p class="pb-3">Videotron indoor dibuat dengan desain yang sesuai untuk kondisi di dalam
                                 ruangan dengan beragam ukuran. Selain itu tingkat ketajaman dan kecerahan warna memang
                                 didesain agar nyaman dipandang mata.Anda dapat menemui videotron jenis ini lebih banyak
@@ -37,7 +37,7 @@ initial-scale=1.0">
                 </div>
                 <div class="col-lg-6">
                     <div class="image-holder">
-                        <img src="https://www.mitravisualgroup.co.id/sitepad-data/uploads/2023/12/Screenshot-2023-12-24-at-22-53-38-GRAND-LAUNCHING-MITRA-VISUAL-GROUP-Google-Drive.png"
+                        <img src="{{ Vite::asset('resources/images/Service/Videotron/INDOOR.png') }}"
                             alt="single" class="img-fluid jarallax-img" style="padding:30px">
                     </div>
                 </div>
@@ -47,7 +47,7 @@ initial-scale=1.0">
             <div class="row align-items-center justify-content-between g-5">
                 <div class="col-lg-6">
                     <div class="image-holder">
-                        <img src="https://www.mitravisualgroup.co.id/sitepad-data/uploads/2023/12/Screenshot-2023-12-24-at-22-53-38-GRAND-LAUNCHING-MITRA-VISUAL-GROUP-Google-Drive.png"
+                        <img src="{{ Vite::asset('resources/images/Service/Videotron/OUTDOOR.png') }}"
                             alt="single" class="img-fluid jarallax-img" style="padding:30px">
                     </div>
                 </div>
@@ -78,9 +78,9 @@ initial-scale=1.0">
                         <div class="display-header">
                             <h2 class="display-5 text-dark pb-2 fw-bold">3D LED Outdoor Advertising</h2>
                             <p class="pb-3">Baliho 3D adalah teknologi 3D inovatif yang menggunakan pemutar reklame
-                                digital tradisional dengan cara yang benar-benar baru. Biasanya berupa papan reklame
+                                digital tradisional dengan cara yang benar-benar baru.Biasanya berupa papan reklame
                                 besar yang memberikan ilusi bahwa suatu objek “muncul” dari layar dan memasuki dunia
-                                nyata. Efek 3D inilah yang menjadi alasan mengapa jenis solusi signage digital ini
+                                nyata.Efek 3D inilah yang menjadi alasan mengapa jenis solusi signage digital ini
                                 mendapatkan popularitas dengan cepat dalam beberapa tahun terakhir.</p>
 
                         </div>
@@ -88,7 +88,7 @@ initial-scale=1.0">
                 </div>
                 <div class="col-lg-6">
                     <div class="image-holder">
-                        <img src="https://www.mitravisualgroup.co.id/sitepad-data/uploads/2023/12/Screenshot-2023-12-24-at-22-53-38-GRAND-LAUNCHING-MITRA-VISUAL-GROUP-Google-Drive.png"
+                        <img src="{{ Vite::asset('resources/images/Service/Videotron/3D.png') }}"
                             alt="single" class="img-fluid jarallax-img" style="padding:30px">
                     </div>
                 </div>
@@ -98,7 +98,7 @@ initial-scale=1.0">
             <div class="row align-items-center justify-content-between g-5">
                 <div class="col-lg-6">
                     <div class="image-holder">
-                        <img src="https://www.mitravisualgroup.co.id/sitepad-data/uploads/2023/12/Screenshot-2023-12-24-at-22-53-38-GRAND-LAUNCHING-MITRA-VISUAL-GROUP-Google-Drive.png"
+                        <img src="{{ Vite::asset('resources/images/Service/Videotron/RENTAL.png') }}"
                             alt="single" class="img-fluid jarallax-img" style="padding:30px">
                     </div>
                 </div>
@@ -137,7 +137,7 @@ initial-scale=1.0">
                 </div>
                 <div class="col-lg-6">
                     <div class="image-holder">
-                        <img src="https://www.mitravisualgroup.co.id/sitepad-data/uploads/2023/12/Screenshot-2023-12-24-at-22-53-38-GRAND-LAUNCHING-MITRA-VISUAL-GROUP-Google-Drive.png"
+                        <img src="{{ Vite::asset('resources/images/Service/Videotron/COBLED.png') }}"
                             alt="single" class="img-fluid jarallax-img" style="padding:30px">
                     </div>
                 </div>
@@ -147,7 +147,7 @@ initial-scale=1.0">
             <div class="row align-items-center justify-content-between g-5">
                 <div class="col-lg-6">
                     <div class="image-holder">
-                        <img src="https://www.mitravisualgroup.co.id/sitepad-data/uploads/2023/12/Screenshot-2023-12-24-at-22-53-38-GRAND-LAUNCHING-MITRA-VISUAL-GROUP-Google-Drive.png"
+                        <img src="{{ Vite::asset('resources/images/Service/Videotron/WALL.png') }}"
                             alt="single" class="img-fluid jarallax-img" style="padding:30px">
                     </div>
                 </div>
@@ -190,7 +190,7 @@ initial-scale=1.0">
                 </div>
                 <div class="col-lg-6">
                     <div class="image-holder">
-                        <img src="https://www.mitravisualgroup.co.id/sitepad-data/uploads/2023/12/Screenshot-2023-12-24-at-22-53-38-GRAND-LAUNCHING-MITRA-VISUAL-GROUP-Google-Drive.png"
+                        <img src="{{ Vite::asset('resources/images/Service/Videotron/STADIUM.png') }}"
                             alt="single" class="img-fluid jarallax-img" style="padding:30px">
                     </div>
                 </div>

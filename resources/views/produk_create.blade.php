@@ -54,7 +54,7 @@
 
             <div class="form-group" id="subkategori_div" style="display: none;">
                 <label for="subkategori_id">Subkategori:</label>
-                <select class="form-control" id="subkategori_id" name="subkategori_id" required>
+                <select class="form-control" id="subkategori_id" name="subkategori_id" >
                     <option value="" disabled selected>Pilih Subkategori</option>
                 </select>
             </div>

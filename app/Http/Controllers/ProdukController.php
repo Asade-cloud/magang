@@ -102,7 +102,7 @@ class ProdukController extends Controller
             'linkmodul' => $validated['linkmodul'],
             'deskripsi' => $validated['deskripsi'],
             'kategori_id' => $validated['kategori_id'],
-            'subkategori_id' => $validated['subkategori_id'],
+            'subkategori_id' => $validated['subkategori_id'] ?? null,
             'merek_id' => $validated['merek_id'],
         ]);
 
